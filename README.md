@@ -23,6 +23,16 @@ if err != nil {
 fmt.Println("Build ID:", buildID)
 ```
 
+## Command-Line Usage
+
+Run the example CLI directly with the full package path:
+
+```sh
+go run github.com/offlinehacker/buildid/cmd@latest /path/to/binary
+```
+
+This prints the extracted build ID to stdout.
+
 ## Platform Support
 
 Please note that this package is intended for use on Linux systems only, as it relies on the ELF binary format.
